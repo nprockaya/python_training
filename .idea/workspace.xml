@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Final Version of Recordered Test">
-      <change beforePath="$PROJECT_DIR$/.idea/python_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Final Version of Recordered Test v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
@@ -95,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612974004969</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final Version of Recordered Test v2">
+      <created>1612976494434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612976494434</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,25 +119,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Recordered Test" />
     <MESSAGE value="Final Version of Recordered Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Version of Recordered Test" />
+    <MESSAGE value="Final Version of Recordered Test v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version of Recordered Test v2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1500" height="208" key="GridCell.Tab.0.bottom" timestamp="1612976450399">
+    <state width="1500" height="207" key="GridCell.Tab.0.bottom" timestamp="1612977587459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612976450399" />
-    <state width="1500" height="208" key="GridCell.Tab.0.center" timestamp="1612976450399">
+    <state width="1500" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612977587459" />
+    <state width="1500" height="207" key="GridCell.Tab.0.center" timestamp="1612977587459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612976450399" />
-    <state width="1500" height="208" key="GridCell.Tab.0.left" timestamp="1612976450398">
+    <state width="1500" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612977587459" />
+    <state width="1500" height="207" key="GridCell.Tab.0.left" timestamp="1612977587459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612976450398" />
-    <state width="1500" height="208" key="GridCell.Tab.0.right" timestamp="1612976450399">
+    <state width="1500" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612977587459" />
+    <state width="1500" height="207" key="GridCell.Tab.0.right" timestamp="1612977587459">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612976450399" />
+    <state width="1500" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612977587459" />
     <state x="552" y="115" key="RollbackChangesDialog" timestamp="1612973186336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -140,10 +147,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612974063328" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612974022906">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612976501154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612974022906" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612976501154" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612973142224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -152,5 +159,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1612973119320" />
+    <state x="618" y="188" width="602" height="464" key="refactoring.ChangeSignatureDialog" timestamp="1612978149480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="188" width="602" height="464" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1612978149480" />
   </component>
 </project>
