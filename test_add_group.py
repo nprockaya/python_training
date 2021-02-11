@@ -8,7 +8,6 @@ class TestAddGroup(unittest.TestCase):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(60)
 
-
     def test_add_normal_group(self):
         wd = self.wd
         self.open_home_page(wd)
@@ -46,19 +45,28 @@ class TestAddGroup(unittest.TestCase):
         # init group creation
         wd.find_element_by_name("new").click()
         # fill group form
+        self.fill_group_name(group, wd)
+        self.fill_group_header(group, wd)
+        self.fill_group_footer(group, wd)
+        # submit group creation
+        wd.find_element_by_name("submit").click()
+
+    def fill_group_name(self, group, wd):
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
         wd.find_element_by_name("group_name").send_keys(group.name)
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_xpath("//form[@action='/addressbook/group.php']").click()
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys(group.header)
+
+    def fill_group_header(self, group, wd):
+         wd.find_element_by_name("group_header").click()
+         wd.find_element_by_xpath("//form[@action='/addressbook/group.php']").click()
+         wd.find_element_by_name("group_header").click()
+         wd.find_element_by_name("group_header").clear()
+         wd.find_element_by_name("group_header").send_keys(group.header)
+
+    def fill_group_footer(self, group, wd):
         wd.find_element_by_name("group_footer").click()
         wd.find_element_by_name("group_footer").clear()
         wd.find_element_by_name("group_footer").send_keys(group.footer)
-        # submit group creation
-        wd.find_element_by_name("submit").click()
 
     def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
