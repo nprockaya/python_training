@@ -2,10 +2,10 @@
 from Models.contact_class import Contact
 
 
-def test_add_contact_normal(app):
+def test_add_contact_normal(appcontact):
 
-    app.session.login(user_name="admin", password="secret")
-    app.contact.create(
+    appcontact.session.login(user_name="admin", password="secret")
+    appcontact.contact.create(
         Contact(first_name_value="Firstname", middle_name_value="Middlename", last_name_value="Lastname",
                 nickname_value="Nickname", title_value="Title", company_value="Company",
                 address_value="123456, address_city, address_street, address_home",
@@ -15,4 +15,4 @@ def test_add_contact_normal(app):
                 bday_value="1", bmonth_value="January", byear_value="2000", aday_value="1", amonth_value="January",
                 ayear_value="2020", secondary_address_value="Second address", secondary_home_value="Second home",
                 secondary_notes_value="Notes"))
-    app.session.logout()
+    appcontact.session.logout()

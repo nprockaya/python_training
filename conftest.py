@@ -4,14 +4,14 @@ import pytest
 
 
 @pytest.fixture()
-def app(request):
+def appgroup(request):
     fixture = AppGroup()
     request.addfinalizer(fixture.destroy)
     return fixture
 
 
 @pytest.fixture()
-def app(request):
-    fixture = AppGroup()
+def appcontact(request):
+    fixture = AppContact()
     request.addfinalizer(fixture.destroy)
     return fixture
