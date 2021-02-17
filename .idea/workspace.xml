@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Правки для контактов">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Вынесены классы-помощники">
+      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
@@ -51,12 +52,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nadya\PycharmProjects\python_training" />
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Tests" />
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Fixtures" />
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
+  <component name="RunManager" selected="Python tests.pytest in test_delete_group.py">
     <configuration name="test_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +112,25 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_delete_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_delete_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python.test_add_group" />
       </list>
@@ -247,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613586598195</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Вынесены классы-помощники">
+      <created>1613589085166</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613589085166</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,7 +304,8 @@
     <MESSAGE value="Группировка" />
     <MESSAGE value="Создана фикстура для сессий" />
     <MESSAGE value="Правки для контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правки для контактов" />
+    <MESSAGE value="Вынесены классы-помощники" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вынесены классы-помощники" />
   </component>
   <component name="WindowStateProjectService">
     <state x="484" y="0" key="#pytest_in_test_add_contact.py" timestamp="1613582692653">
@@ -297,22 +324,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613582466599" />
-    <state width="1515" height="281" key="GridCell.Tab.0.bottom" timestamp="1613588861900">
+    <state width="1515" height="281" key="GridCell.Tab.0.bottom" timestamp="1613590216841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613588861900" />
-    <state width="1515" height="281" key="GridCell.Tab.0.center" timestamp="1613588861900">
+    <state width="1515" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
+    <state width="1515" height="281" key="GridCell.Tab.0.center" timestamp="1613590216841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613588861900" />
-    <state width="1515" height="281" key="GridCell.Tab.0.left" timestamp="1613588861900">
+    <state width="1515" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
+    <state width="1515" height="281" key="GridCell.Tab.0.left" timestamp="1613590216841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613588861900" />
-    <state width="1515" height="281" key="GridCell.Tab.0.right" timestamp="1613588861900">
+    <state width="1515" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
+    <state width="1515" height="281" key="GridCell.Tab.0.right" timestamp="1613590216841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613588861900" />
+    <state width="1515" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
     <state x="552" y="115" key="RollbackChangesDialog" timestamp="1612973186336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -321,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613582469248" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613586601743">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613589090022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613586601743" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613589090022" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612973142224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
