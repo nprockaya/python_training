@@ -3,7 +3,7 @@ from Fixtures.application_for_contacts import AppContact
 import pytest
 
 
-@pytest.fixture()
+@pytest.fixture(scope="session")
 def appgroup(request):
     fixture = AppGroup()
     request.addfinalizer(fixture.destroy)

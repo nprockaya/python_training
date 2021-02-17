@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from Models.group_class import Group
-
+from Fixtures.session import SessionHelper
 
 def test_add_normal_group(appgroup):
     appgroup.session.login(user_name="admin", password="secret")
