@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Вынесены классы-помощники">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/application_for_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application_for_contacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/application_for_groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application_for_groups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_delete_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613589085166</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Вынесены классы-помощники">
+      <created>1613591709575</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1613591709575</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,22 +332,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613582466599" />
-    <state width="1515" height="281" key="GridCell.Tab.0.bottom" timestamp="1613590216841">
+    <state width="1515" height="281" key="GridCell.Tab.0.bottom" timestamp="1613592145481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
-    <state width="1515" height="281" key="GridCell.Tab.0.center" timestamp="1613590216841">
+    <state width="1515" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613592145481" />
+    <state width="1515" height="281" key="GridCell.Tab.0.center" timestamp="1613592145481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
-    <state width="1515" height="281" key="GridCell.Tab.0.left" timestamp="1613590216841">
+    <state width="1515" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613592145481" />
+    <state width="1515" height="281" key="GridCell.Tab.0.left" timestamp="1613592145481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
-    <state width="1515" height="281" key="GridCell.Tab.0.right" timestamp="1613590216841">
+    <state width="1515" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613592145481" />
+    <state width="1515" height="281" key="GridCell.Tab.0.right" timestamp="1613592145481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613590216841" />
+    <state width="1515" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613592145481" />
     <state x="552" y="115" key="RollbackChangesDialog" timestamp="1612973186336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

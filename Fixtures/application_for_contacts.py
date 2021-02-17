@@ -3,7 +3,7 @@ from Fixtures.session import SessionHelper
 from Fixtures.contact import ContactHelper
 
 
-class Application:
+class AppContact:
     def __init__(self):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(60)
