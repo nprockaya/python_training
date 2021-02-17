@@ -12,8 +12,9 @@ def app(request):
 
 
 def test_add_contact_normal(app):
+
     app.session.login(user_name="admin", password="secret")
-    app.contact_creation(
+    app.contact.create(
         Contact(first_name_value="Firstname", middle_name_value="Middlename", last_name_value="Lastname",
                 nickname_value="Nickname", title_value="Title", company_value="Company",
                 address_value="123456, address_city, address_street, address_home",
