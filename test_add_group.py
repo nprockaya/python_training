@@ -7,7 +7,7 @@ import pytest
 @pytest.fixture()
 def app(request):
     fixture = app_for_groups()
-    request.addfinilizer(fixture.destroy())
+    request.addfinalizer(fixture.destroy())
     return fixture
 
 
