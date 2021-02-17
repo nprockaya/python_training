@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Added Birthday and Anniversary Day">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Вынесен WD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
@@ -49,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
+  <component name="RunManager" selected="Python.test_add_group">
     <configuration name="test_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,8 +89,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python.test_add_group" />
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613076993646</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Birthday and Anniversary Day">
+      <created>1613461003202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613461003202</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Вынесен WD">
+      <created>1613461063565</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1613461063565</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,25 +206,26 @@
     <MESSAGE value="Added Contact class, new test for creation contact, сorrected codestyle at groups" />
     <MESSAGE value="Usage of Class - Temp" />
     <MESSAGE value="Added Birthday and Anniversary Day" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Birthday and Anniversary Day" />
+    <MESSAGE value="Вынесен WD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вынесен WD" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1613460497699">
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom" timestamp="1613460995223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613460497699" />
-    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1613460497698">
+    <state width="1515" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613460995223" />
+    <state width="1515" height="211" key="GridCell.Tab.0.center" timestamp="1613460995223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613460497698" />
-    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1613460497698">
+    <state width="1515" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613460995223" />
+    <state width="1515" height="211" key="GridCell.Tab.0.left" timestamp="1613460995223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613460497698" />
-    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1613460497698">
+    <state width="1515" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613460995223" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right" timestamp="1613460995223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613460497698" />
+    <state width="1515" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613460995223" />
     <state x="552" y="115" key="RollbackChangesDialog" timestamp="1612973186336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,10 +234,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1613051059602" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613077004555">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613461072078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613077004555" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613461072078" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612973142224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
