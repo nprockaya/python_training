@@ -1,17 +1,10 @@
-from Fixtures.application_for_groups import AppGroup
-from Fixtures.application_for_contacts import AppContact
+from Fixtures.application import Application
 import pytest
 
 
-@pytest.fixture(scope="session")
-def appgroup(request):
-    fixture = AppGroup()
+@pytest.fixture(scope="session", autouse=True)
+def app(request):
+    fixture = Application()
     request.addfinalizer(fixture.destroy)
     return fixture
 
-
-@pytest.fixture()
-def appcontact(request):
-    fixture = AppContact()
-    request.addfinalizer(fixture.destroy)
-    return fixture

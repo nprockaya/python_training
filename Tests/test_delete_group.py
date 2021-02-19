@@ -1,4 +1,6 @@
-def test_delete_first_group(appgroup):
-    appgroup.session.login(user_name="admin", password="secret")
-    appgroup.group.delete_first_group()
-    appgroup.session.logout()
+def test_delete_first_group(app):
+    app.session.login(user_name="admin", password="secret")
+    app.group.delete_first_group()
+    app.session.logout()
+
+
