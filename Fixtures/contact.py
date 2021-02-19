@@ -1,6 +1,5 @@
 from selenium.webdriver.support.ui import Select
 
-
 class ContactHelper:
 
     def __init__(self, appcontact):
@@ -176,4 +175,58 @@ class ContactHelper:
 
     def return_to_homepage(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home page").click()
+        wd.find_element_by_link_text("home").click()
+
+    def edit_first_contact(self, contact):
+        wd = self.app.wd
+        # select first group
+        for element in wd.find_elements_by_name("selected[]"):
+            if element == wd.find_element_by_id("8"):
+                pass  # no action required
+            else:
+                element.click()
+                break
+        # click edit
+        wd.find_element_by_xpath("(//img[@alt='Edit'])[2]").click()
+        wd.find_element_by_xpath("//form[@action='edit.php']").click()
+        # edit fields
+        self.fill_name(contact)
+        self.fill_middle_name(contact)
+        self.fill_last_name(contact)
+        self.fill_nickname(contact)
+        self.fill_title(contact)
+        self.fill_company(contact)
+        self.fill_address(contact)
+        self.fill_home_phone(contact)
+        self.fill_mobile_phone(contact)
+        self.fill_work_phone(contact)
+        self.fill_fax(contact)
+        self.fill_email(contact)
+        self.fill_email2(contact)
+        self.fill_email3(contact)
+        self.fill_homepage(contact)
+        self.fill_bday(contact)
+        self.fill_aday(contact)
+        self.fill_secondary_address(contact)
+        self.fill_secondary_home(contact)
+        self.fill_secondary_notes(contact)
+        # submit edit
+        wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
+        self.return_to_homepage()
+
+    def delete_first_contact(self):
+        wd = self.app.wd
+        # select first group
+        for element in wd.find_elements_by_name("selected[]"):
+            if element == wd.find_element_by_id("8"):
+                pass  # no action required
+            else:
+                element.click()
+                break
+        # click delete
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # accept
+        wd.switch_to_alert().accept()
+        self.return_to_homepage()
+
+
