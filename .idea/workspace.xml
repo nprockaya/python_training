@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Sleep for logout">
-      <change afterPath="$PROJECT_DIR$/Tests/test_delete_contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Added edition contact/group">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +38,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1oI71hZ17dnSeko0XjF2Ea5iOlU" />
   <component name="ProjectViewState">
@@ -62,7 +65,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Tests">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,10 +148,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
       </list>
     </recent_temporary>
@@ -333,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613756042986</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added edition contact/group">
+      <created>1613766553946</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613766553946</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +379,8 @@
     <MESSAGE value="Final bugfix" />
     <MESSAGE value="1 Class application.py" />
     <MESSAGE value="Sleep for logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sleep for logout" />
+    <MESSAGE value="Added edition contact/group" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added edition contact/group" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
