@@ -5,6 +5,11 @@ import pytest
 @pytest.fixture(scope="session", autouse=True)
 def app(request):
     fixture = Application()
-    request.addfinalizer(fixture.destroy)
-    return fixture
+    fixture.session.login(user_name="admin", password="secret")
 
+    def final():
+        fixture.session.logout()
+        fixture.destroy
+
+    request.addfinalizer(final)
+    return fixture

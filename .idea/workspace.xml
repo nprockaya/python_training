@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Bug-fix in session.py">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Refactor edit_group test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/group_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/group_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_delete_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_delete_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_delete_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,7 +112,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_delete_contact.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_delete_group.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -151,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+        <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in Tests" />
-        <item itemvalue="Python tests.pytest in test_delete_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613996496222</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Refactor edit_group test">
+      <created>1614003895733</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614003895733</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,15 +397,16 @@
     <MESSAGE value="Sleep for logout" />
     <MESSAGE value="Added edition contact/group" />
     <MESSAGE value="Bug-fix in session.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug-fix in session.py" />
+    <MESSAGE value="Refactor edit_group test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor edit_group test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Tests/test_add_group.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/Fixtures/group.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
