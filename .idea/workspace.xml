@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Added edition contact/group">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Bug-fix in session.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/group_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/group_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_edit_group.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
-        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
       </list>
     </recent_temporary>
@@ -343,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613766553946</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Bug-fix in session.py">
+      <created>1613996496221</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1613996496222</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +389,8 @@
     <MESSAGE value="1 Class application.py" />
     <MESSAGE value="Sleep for logout" />
     <MESSAGE value="Added edition contact/group" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added edition contact/group" />
+    <MESSAGE value="Bug-fix in session.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug-fix in session.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
