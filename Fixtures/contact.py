@@ -1,5 +1,6 @@
 from selenium.webdriver.support.ui import Select
 
+
 class ContactHelper:
 
     def __init__(self, appcontact):
@@ -8,6 +9,7 @@ class ContactHelper:
     def open_contact_creation_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
+        #wd.find_elements_by_id("content")
 
     def create(self, contact):
         wd = self.app.wd
@@ -17,6 +19,7 @@ class ContactHelper:
         # fill contact form
         self.fill_contact_form(contact)
         self.submit_contact_creation()
+        self.return_to_homepage()
 
     def fill_contact_form(self, contact):
         self.fill_name(contact)
@@ -187,6 +190,7 @@ class ContactHelper:
 
     def edit_first_contact(self, contact):
         wd = self.app.wd
+        self.return_to_homepage()
         # select first group
         self.select_first_contact()
         # click edit
@@ -200,6 +204,7 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.return_to_homepage()
         # select first group
         self.select_first_contact()
         # click delete

@@ -15,4 +15,3 @@ def test_edit_first_contact(app):
                 ayear_value="2023", secondary_address_value="edit_second_address_test",
                 secondary_home_value="edit_second_home_test",
                 secondary_notes_value="edit_notes_test"))
-
