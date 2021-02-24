@@ -4,16 +4,15 @@ import pytest
 fixture = None
 
 
-@pytest.fixture()
+@pytest.fixture(scope="session")
 def app():
     global fixture
     if fixture is None:
         fixture = Application()
-        fixture.session.login(user_name="admin", password="secret")
     else:
         if not fixture.is_valid():
             fixture = Application()
-            fixture.session.login(user_name="admin", password="secret")
+    fixture.session.ensure_login(user_name="admin", password="secret")
     return fixture
 
 
