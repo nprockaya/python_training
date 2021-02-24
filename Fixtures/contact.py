@@ -15,6 +15,10 @@ class ContactHelper:
         # init creation
         wd.find_element_by_link_text("add new").click()
         # fill contact form
+        self.fill_contact_form(contact)
+        self.submit_contact_creation()
+
+    def fill_contact_form(self, contact):
         self.fill_name(contact)
         self.fill_middle_name(contact)
         self.fill_last_name(contact)
@@ -35,7 +39,6 @@ class ContactHelper:
         self.fill_secondary_address(contact)
         self.fill_secondary_home(contact)
         self.fill_secondary_notes(contact)
-        self.submit_contact_creation()
 
     def fill_name(self, contact):
         wd = self.app.wd
@@ -177,39 +180,20 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("home").click()
 
+    def select_first_contact(self):
+        wd = self.app.wd
+        first_element = wd.find_element_by_xpath("//div/div[4]/form[2]/table/tbody/tr[2]/td[1]")
+        first_element.click()
+
     def edit_first_contact(self, contact):
         wd = self.app.wd
         # select first group
-        for element in wd.find_elements_by_name("selected[]"):
-            if element == wd.find_element_by_id("8"):
-                pass  # no action required
-            else:
-                element.click()
-                break
+        self.select_first_contact()
         # click edit
         wd.find_element_by_xpath("(//img[@alt='Edit'])[2]").click()
         wd.find_element_by_xpath("//form[@action='edit.php']").click()
         # edit fields
-        self.fill_name(contact)
-        self.fill_middle_name(contact)
-        self.fill_last_name(contact)
-        self.fill_nickname(contact)
-        self.fill_title(contact)
-        self.fill_company(contact)
-        self.fill_address(contact)
-        self.fill_home_phone(contact)
-        self.fill_mobile_phone(contact)
-        self.fill_work_phone(contact)
-        self.fill_fax(contact)
-        self.fill_email(contact)
-        self.fill_email2(contact)
-        self.fill_email3(contact)
-        self.fill_homepage(contact)
-        self.fill_bday(contact)
-        self.fill_aday(contact)
-        self.fill_secondary_address(contact)
-        self.fill_secondary_home(contact)
-        self.fill_secondary_notes(contact)
+        self.fill_contact_form(contact)
         # submit edit
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
         self.return_to_homepage()
@@ -217,16 +201,18 @@ class ContactHelper:
     def delete_first_contact(self):
         wd = self.app.wd
         # select first group
-        for element in wd.find_elements_by_name("selected[]"):
-            if element == wd.find_element_by_id("8"):
-                pass  # no action required
-            else:
-                element.click()
-                break
+        self.select_first_contact()
         # click delete
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         # accept
         wd.switch_to_alert().accept()
         self.return_to_homepage()
 
-
+    # def select_second_contact(self):
+    #     wd = self.app.wd
+    #     for element in wd.find_elements_by_name("selected[]"):
+    #         if element == wd.find_element_by_id("29"):
+    #             pass  # no action required
+    #         else:
+    #             element.click()
+    #             break
