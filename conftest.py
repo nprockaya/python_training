@@ -8,7 +8,7 @@ def app(request):
     fixture.session.login(user_name="admin", password="secret")
 
     def final():
-        fixture.session.logout()
+        fixture.session.ensure_logout()
         fixture.destroy()
     request.addfinalizer(final)
     return fixture
