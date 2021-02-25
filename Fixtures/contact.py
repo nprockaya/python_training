@@ -9,7 +9,7 @@ class ContactHelper:
     def open_contact_creation_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
-        #wd.find_elements_by_id("content")
+
 
     def create(self, contact):
         wd = self.app.wd
@@ -194,13 +194,13 @@ class ContactHelper:
         # select first group
         self.select_first_contact()
         # click edit
-        wd.find_element_by_xpath("(//img[@alt='Edit'])[2]").click()
-        wd.find_element_by_xpath("//form[@action='edit.php']").click()
+        wd.find_element_by_xpath("(//img[@alt='Edit'])").click()
         # edit fields
         self.fill_contact_form(contact)
         # submit edit
-        wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
+        wd.find_element_by_xpath("(//input[@name='update'])").click()
         self.return_to_homepage()
+
 
     def delete_first_contact(self):
         wd = self.app.wd
