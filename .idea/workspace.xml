@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Оптимизирована навигация в группах">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Промежуточный результат">
       <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614284609920</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Промежуточный результат">
+      <created>1614286371326</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1614286371326</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -515,13 +520,13 @@
     <MESSAGE value="Багфикс для контактов" />
     <MESSAGE value="Корректная работа всего прогона" />
     <MESSAGE value="Интеллектуальный logout" />
-    <MESSAGE value="Промежуточный результат" />
     <MESSAGE value="Task 8" />
     <MESSAGE value="Добавлены проверки наличия группы перед удалением" />
     <MESSAGE value="Добавлены проверки наличия группы перед редактированием" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением и редактированием" />
     <MESSAGE value="Оптимизирована навигация в группах" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизирована навигация в группах" />
+    <MESSAGE value="Промежуточный результат" />
+    <option name="LAST_COMMIT_MESSAGE" value="Промежуточный результат" />
   </component>
 </project>
