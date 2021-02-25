@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Task 8">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлены проверки наличия группы перед удалением">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_delete_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_delete_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_delete_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_edit_group.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
-        <item itemvalue="Python tests.pytest in test_edit_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614206510023</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Добавлены проверки наличия группы перед удалением">
+      <created>1614263708508</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614263708508</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -462,7 +468,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Class Group" />
     <MESSAGE value="Added Contact class, new test for creation contact, сorrected codestyle at groups" />
     <MESSAGE value="Usage of Class - Temp" />
     <MESSAGE value="Added Birthday and Anniversary Day" />
@@ -487,6 +492,7 @@
     <MESSAGE value="Интеллектуальный logout" />
     <MESSAGE value="Промежуточный результат" />
     <MESSAGE value="Task 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 8" />
+    <MESSAGE value="Добавлены проверки наличия группы перед удалением" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены проверки наличия группы перед удалением" />
   </component>
 </project>
