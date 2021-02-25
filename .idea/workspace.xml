@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлены проверки наличия контакта перед удалением и редактированием">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Оптимизирована навигация в группах">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/session.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614283673785</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Оптимизирована навигация в группах">
+      <created>1614284609920</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1614284609920</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -489,7 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Вынесен WD" />
     <MESSAGE value="Созданы фикстуры" />
     <MESSAGE value="Правки" />
     <MESSAGE value="Правки_2" />
@@ -514,6 +521,7 @@
     <MESSAGE value="Добавлены проверки наличия группы перед редактированием" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением и редактированием" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены проверки наличия контакта перед удалением и редактированием" />
+    <MESSAGE value="Оптимизирована навигация в группах" />
+    <option name="LAST_COMMIT_MESSAGE" value="Оптимизирована навигация в группах" />
   </component>
 </project>

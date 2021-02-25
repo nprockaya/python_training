@@ -8,7 +8,8 @@ class ContactHelper:
 
     def open_contact_creation_page(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("add new").click()
+        if not (wd.current_url.endswith("/edit.php") and len(wd.find_elements_by_name("submit")) > 0):
+            wd.find_element_by_link_text("add new").click()
 
     def create(self, contact):
         wd = self.app.wd
