@@ -10,7 +10,6 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
-
     def create(self, contact):
         wd = self.app.wd
         self.open_contact_creation_page()
@@ -201,7 +200,6 @@ class ContactHelper:
         wd.find_element_by_xpath("(//input[@name='update'])").click()
         self.return_to_homepage()
 
-
     def delete_first_contact(self):
         wd = self.app.wd
         self.return_to_homepage()
@@ -217,7 +215,6 @@ class ContactHelper:
         wd = self.app.wd
         self.return_to_homepage()
         return len(wd.find_elements_by_name("selected[]"))
-
 
     # def select_second_contact(self):
     #     wd = self.app.wd
