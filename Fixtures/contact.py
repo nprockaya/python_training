@@ -213,6 +213,12 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.return_to_homepage()
 
+    def count_contacts(self):
+        wd = self.app.wd
+        self.return_to_homepage()
+        return len(wd.find_elements_by_name("selected[]"))
+
+
     # def select_second_contact(self):
     #     wd = self.app.wd
     #     for element in wd.find_elements_by_name("selected[]"):
