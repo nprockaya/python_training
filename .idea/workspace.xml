@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Промежуточное выполнение, апдейт теста добавления группы">
-      <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Промежуточное выполнение, апдейт теста редактирования группы">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_edit_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
@@ -494,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614803372774</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Промежуточное выполнение, апдейт теста редактирования группы">
+      <created>1614803700047</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1614803700047</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -550,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Вынесены классы-помощники" />
     <MESSAGE value="Фикс проблем" />
     <MESSAGE value="Final bugfix" />
     <MESSAGE value="1 Class application.py" />
@@ -575,6 +583,7 @@
     <MESSAGE value="Промежуточное выполнение, апдейт тестов" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста удаления группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста добавления группы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Промежуточное выполнение, апдейт теста добавления группы" />
+    <MESSAGE value="Промежуточное выполнение, апдейт теста редактирования группы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Промежуточное выполнение, апдейт теста редактирования группы" />
   </component>
 </project>
