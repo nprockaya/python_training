@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №9">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Корректный вызов current_url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/group_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/group_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Tests">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,9 +155,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
       </list>
@@ -453,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614286655994</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Корректный вызов current_url">
+      <created>1614673692254</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1614673692254</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -509,7 +518,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Правки" />
     <MESSAGE value="Правки_2" />
     <MESSAGE value="Группировка" />
     <MESSAGE value="Создана фикстура для сессий" />
@@ -534,6 +542,7 @@
     <MESSAGE value="Оптимизирована навигация в группах" />
     <MESSAGE value="Промежуточный результат" />
     <MESSAGE value="Задание №9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №9" />
+    <MESSAGE value="Корректный вызов current_url" />
+    <option name="LAST_COMMIT_MESSAGE" value="Корректный вызов current_url" />
   </component>
 </project>
