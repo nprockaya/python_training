@@ -225,5 +225,5 @@ class ContactHelper:
         for element in wd.find_elements_by_css_selector("tr[name='entry']"):
             text = element.text
             local_contact_id = element.find_element_by_name("selected[]").get_attribute("value")
-            contact_list.append(Contact(first_name_value=text, contact_id=local_contact_id))
+            contact_list.append(Contact(first_name_value=text, contact_id_value=local_contact_id))
         return contact_list

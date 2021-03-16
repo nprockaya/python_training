@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен рандом">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлены assert для создание, редактирования, удаления групп">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/contact_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/contact_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_delete_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_delete_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_edit_contact.py">
+  <component name="RunManager" selected="Python tests.pytest in test_delete_contact.py">
     <configuration name="pytest for test_delete_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest for test_delete_contact" />
@@ -176,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00001" summary="First Recordered Test">
-      <created>1612970035517</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612970035517</updated>
     </task>
     <task id="LOCAL-00002" summary="Final Version of Recordered Test">
       <created>1612974004969</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614805622802</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Добавлены assert для создание, редактирования, удаления групп">
+      <created>1615929577556</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1615929577556</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -576,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1 Class application.py" />
     <MESSAGE value="Sleep for logout" />
     <MESSAGE value="Added edition contact/group" />
     <MESSAGE value="Bug-fix in session.py" />
@@ -601,6 +599,7 @@
     <MESSAGE value="Промежуточное выполнение, апдейт теста редактирования группы" />
     <MESSAGE value="Добавлено хеширование и кеширование" />
     <MESSAGE value="Добавлен рандом" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен рандом" />
+    <MESSAGE value="Добавлены assert для создание, редактирования, удаления групп" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены assert для создание, редактирования, удаления групп" />
   </component>
 </project>
