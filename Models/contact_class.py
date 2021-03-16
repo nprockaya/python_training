@@ -1,5 +1,12 @@
 class Contact:
-    def __init__(self, first_name_value, middle_name_value, last_name_value, nickname_value, title_value, company_value, address_value, home_phone_value, mobile_phone_value, work_phone_value, fax_value, email_value, email2_value, email3_value, homepage_value, bday_value, bmonth_value, byear_value, aday_value, amonth_value, ayear_value, secondary_address_value, secondary_home_value, secondary_notes_value):
+    def __init__(self, first_name_value=None, middle_name_value=None, last_name_value=None, nickname_value=None,
+                 title_value=None, company_value=None, address_value=None, home_phone_value=None,
+                 mobile_phone_value=None, work_phone_value=None, fax_value=None, email_value=None,
+                 email2_value=None, email3_value=None, homepage_value=None,
+                 bday_value=None, bmonth_value=None, byear_value=None, aday_value=None,
+                 amonth_value=None, ayear_value=None, secondary_address_value=None,
+                 secondary_home_value=None, secondary_notes_value=None, contact_id=None):
+        self.id = contact_id
         self.first_name = first_name_value
         self.middle_name = middle_name_value
         self.last_name = last_name_value

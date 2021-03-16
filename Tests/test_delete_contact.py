@@ -1,17 +1,21 @@
 from Models.contact_class import Contact
-
+from time import sleep
 
 def test_delete_first_contact(app):
+    contact = Contact(first_name_value="Firstname", middle_name_value="Middlename", last_name_value="Lastname",
+                      nickname_value="Nickname", title_value="Title", company_value="Company",
+                      address_value="123456, address_city, address_street, address_home",
+                      home_phone_value="123456_home_phone", mobile_phone_value="123456_mobile_phone",
+                      work_phone_value="123456_work_phone", fax_value="123456_fax", email_value="1@mail.com",
+                      email2_value="2@mail.com", email3_value="3@mail.com", homepage_value="https://home_page.com",
+                      bday_value="1", bmonth_value="January", byear_value="2000", aday_value="1",
+                      amonth_value="January",
+                      ayear_value="2020", secondary_address_value="Second address", secondary_home_value="Second home",
+                      secondary_notes_value="Notes")
     if app.contact.count_contacts() == 0:
-        app.contact.create(
-            Contact(first_name_value="for_delete_test", middle_name_value="for_delete_test",
-                    last_name_value="for_delete_test", nickname_value="for_delete_test",
-                    title_value="for_delete_test", company_value="for_delete_test",
-                    address_value="for_delete_test", home_phone_value="for_delete_test",
-                    mobile_phone_value="for_delete_test", work_phone_value="for_delete_test", fax_value="for_delete_test",
-                    email_value="for_delete_test", email2_value="for_delete_test", email3_value="for_delete_test",
-                    homepage_value="for_delete_test", bday_value="5", bmonth_value="May",
-                    byear_value="2005", aday_value="6", amonth_value="June",
-                    ayear_value="2006", secondary_address_value="for_delete_test", secondary_home_value="for_delete_test",
-                    secondary_notes_value="for_delete_test"))
+        app.contact.create(contact)
+    old_contacts = app.contact.get_contact_list()
     app.contact.delete_first_contact()
+    sleep(1)
+    new_contacts = app.contact.get_contact_list()
+    assert len(old_contacts) - 1 == len(new_contacts)

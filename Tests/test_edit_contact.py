@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
 from Models.contact_class import Contact
+from time import sleep
+
 
 def test_edit_first_contact(app):
-    if app.contact.count_contacts() == 0:
-        app.contact.create(
-            Contact(first_name_value="for_edit_test", middle_name_value="for_edit_test",
-                    last_name_value="for_edit_test", nickname_value="for_edit_test",
-                    title_value="for_edit_test", company_value="for_edit_test",
-                    address_value="for_edit_test", home_phone_value="for_edit_test",
-                    mobile_phone_value="for_edit_test", work_phone_value="for_edit_test", fax_value="for_edit_test",
-                    email_value="for_edit_test", email2_value="for_edit_test", email3_value="for_edit_test",
-                    homepage_value="for_edit_test", bday_value="7", bmonth_value="July",
-                    byear_value="2007", aday_value="8", amonth_value="August",
-                    ayear_value="2008", secondary_address_value="for_edit_test", secondary_home_value="for_edit_test",
-                    secondary_notes_value="for_edit_test"))
-    app.contact.edit_first_contact(
-        Contact(first_name_value="Edit_name_test", middle_name_value="Edit_middle_name_test",
+    contact = Contact(first_name_value="Firstname", middle_name_value="Middlename", last_name_value="Lastname",
+                      nickname_value="Nickname", title_value="Title", company_value="Company",
+                      address_value="123456, address_city, address_street, address_home",
+                      home_phone_value="123456_home_phone", mobile_phone_value="123456_mobile_phone",
+                      work_phone_value="123456_work_phone", fax_value="123456_fax", email_value="1@mail.com",
+                      email2_value="2@mail.com", email3_value="3@mail.com", homepage_value="https://home_page.com",
+                      bday_value="1", bmonth_value="January", byear_value="2000", aday_value="1",
+                      amonth_value="January",
+                      ayear_value="2020", secondary_address_value="Second address", secondary_home_value="Second home",
+                      secondary_notes_value="Notes")
+    edited_contact = Contact(first_name_value="Edit_name_test", middle_name_value="Edit_middle_name_test",
                 last_name_value="Edit_last_name_test",
                 nickname_value="edit_nickname_test", title_value="edit_title_test", company_value="edit_company_test",
                 address_value="edit_address_test",
@@ -25,4 +24,12 @@ def test_edit_first_contact(app):
                 bday_value="12", bmonth_value="November", byear_value="2020", aday_value="13", amonth_value="November",
                 ayear_value="2023", secondary_address_value="edit_second_address_test",
                 secondary_home_value="edit_second_home_test",
-                secondary_notes_value="edit_notes_test"))
+                secondary_notes_value="edit_notes_test")
+    if app.contact.count_contacts() == 0:
+        app.contact.create(contact)
+    old_contacts = app.contact.get_contact_list()
+    app.contact.edit_first_contact(edited_contact)
+    #sleep(1)
+    new_contacts = app.contact.get_contact_list()
+    assert len(old_contacts) == len(new_contacts)
+
