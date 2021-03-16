@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
 
+
 class ContactHelper:
 
     def __init__(self, appcontact):
@@ -20,6 +21,7 @@ class ContactHelper:
         self.fill_contact_form(contact)
         self.submit_contact_creation()
         self.return_to_homepage()
+        self.contact_cache = None
 
     def fill_contact_form(self, contact):
         self.fill_name(contact)
@@ -201,6 +203,7 @@ class ContactHelper:
         # submit edit
         wd.find_element_by_xpath("(//input[@name='update'])").click()
         self.return_to_homepage()
+        self.contact_cache = None
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -212,18 +215,22 @@ class ContactHelper:
         # accept
         wd.switch_to_alert().accept()
         self.return_to_homepage()
+        self.contact_cache = None
 
     def count_contacts(self):
         wd = self.app.wd
         self.return_to_homepage()
         return len(wd.find_elements_by_name("selected[]"))
 
+    contact_cache = None
+
     def get_contact_list(self):
-        wd = self.app.wd
-        self.return_to_homepage()
-        contact_list = []
-        for element in wd.find_elements_by_css_selector("tr[name='entry']"):
-            text = element.text
-            local_contact_id = element.find_element_by_name("selected[]").get_attribute("value")
-            contact_list.append(Contact(first_name_value=text, contact_id_value=local_contact_id))
-        return contact_list
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.return_to_homepage()
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+                text = element.text
+                local_contact_id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(first_name_value=text, contact_id_value=local_contact_id))
+        return list(self.contact_cache)
