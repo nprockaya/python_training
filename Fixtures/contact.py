@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
-
+from time import sleep
 
 class ContactHelper:
 
@@ -191,7 +191,7 @@ class ContactHelper:
 
     def select_contact_by_index(self, index):
         wd = self.app.wd
-        wd.find_element_by_xpath("//div/div[4]/form[2]/table/tbody/tr[" + str(index+2) + "]/td[1]/input").click()
+        wd.find_element_by_xpath("//table/tbody/tr[" + str(index+2) + "]/td[1]/input").click()
 
     def edit_first_contact(self):
         self.edit_contact_by_index(0)
@@ -202,7 +202,7 @@ class ContactHelper:
         # select some contact
         self.select_contact_by_index(index)
         # click edit
-        wd.find_element_by_xpath("(//img[@alt='Edit'])").click()
+        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index+2) + "]//img[@alt='Edit'])").click()
         # edit fields
         self.fill_contact_form(contact)
         # submit edit
@@ -222,6 +222,9 @@ class ContactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         # accept
         wd.switch_to_alert().accept()
+        # waiting for confirmation
+        sleep(1)
+        wd.find_element_by_xpath("//div[@class='msgbox']")
         self.return_to_homepage()
         self.contact_cache = None
 

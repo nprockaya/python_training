@@ -1,5 +1,4 @@
 from Models.contact_class import Contact
-from time import sleep
 from random import randrange
 
 
@@ -19,8 +18,6 @@ def test_delete_some_contact(app):
     old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
     app.contact.delete_contact_by_index(index)
-    # app.contact.delete_first_contact()
-    sleep(1)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) - 1 == len(new_contacts)
     old_contacts[index:index + 1] = []
