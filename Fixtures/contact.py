@@ -250,13 +250,11 @@ class ContactHelper:
                 local_contact_firstname = contacts_cells[2].text
                 local_contact_lastname = contacts_cells[1].text
                 local_contact_id = contacts_cells[0].find_element_by_tag_name("input").get_attribute("value")
-                all_phones = contacts_cells[5].text.splitlines()
+                all_phones = contacts_cells[5].text
                 self.contact_cache.append(
                     Contact(first_name_value=local_contact_firstname, last_name_value=local_contact_lastname,
-                            contact_id_value=local_contact_id, home_phone_value=all_phones[0],
-                            mobile_phone_value=all_phones[1], work_phone_value=all_phones[2],
-                            secondary_home_value=all_phones[3]))
-        return list(self.contact_cache)
+                            contact_id_value=local_contact_id, all_phones_from_home_page_value=all_phones))
+                return list(self.contact_cache)
 
     def view_contact_by_index_edit_page(self, index):
         wd = self.app.wd
@@ -298,3 +296,4 @@ class ContactHelper:
         return Contact(home_phone_value=home_phone_details,
                        work_phone_value=work_phone_details, mobile_phone_value=mobile_phone_details,
                        secondary_home_value=secondary_phone_details)
+

@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен clear">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен test_phones_on_contact_view_page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/contact_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/contact_class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Созданы фикстуры">
-      <created>1613581357138</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1613581357138</updated>
     </task>
     <task id="LOCAL-00013" summary="Правки">
       <created>1613582762238</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617392206216</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Добавлен test_phones_on_contact_view_page">
+      <created>1617393269918</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1617393269918</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -573,7 +574,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлены проверки наличия группы перед удалением" />
     <MESSAGE value="Добавлены проверки наличия группы перед редактированием" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением и редактированием" />
@@ -598,7 +598,8 @@
     <MESSAGE value="Wronп_contact_list_comparison" />
     <MESSAGE value="Добавлен тест для сравнения телефонов" />
     <MESSAGE value="Добавлен clear" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен clear" />
+    <MESSAGE value="Добавлен test_phones_on_contact_view_page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен test_phones_on_contact_view_page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
