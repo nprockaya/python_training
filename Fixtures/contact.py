@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
-from time import sleep
+import re
 
 
 class ContactHelper:
@@ -258,15 +258,21 @@ class ContactHelper:
                             secondary_home_value=all_phones[3]))
         return list(self.contact_cache)
 
-    def view_contact_by_index(self, index):
+    def view_contact_by_index_edit_page(self, index):
         wd = self.app.wd
         self.return_to_homepage()
         # click view
         wd.find_element_by_xpath("(//table/tbody/tr[" + str(index + 2) + "]//img[@alt='Edit'])").click()
 
+    def view_contact_by_index_details(self, index):
+        wd = self.app.wd
+        self.return_to_homepage()
+        # click view
+        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index + 2) + "]//img[@alt='Details'])").click()
+
     def get_contact_info_from_edit_page(self, index):
         wd = self.app.wd
-        self.view_contact_by_index(index)
+        self.view_contact_by_index_edit_page(index)
         # person data
         first_name_ep = wd.find_element_by_name("firstname").get_attribute("value")
         last_name_ep = wd.find_element_by_name("lastname").get_attribute("value")
@@ -280,3 +286,15 @@ class ContactHelper:
                        contact_id_value=contact_id_ep, home_phone_value=home_phone_ep,
                        work_phone_value=work_phone_ep, mobile_phone_value=mobile_phone_ep,
                        secondary_home_value=secondary_home_ep)
+
+    def get_contact_info_from_view_page(self, index):
+        wd = self.app.wd
+        self.view_contact_by_index_details(index)
+        contact_text = wd.find_element_by_id("content").text
+        home_phone_details = re.search("H: (.*)", contact_text).group(1)
+        mobile_phone_details = re.search("M: (.*)", contact_text).group(1)
+        work_phone_details = re.search("W: (.*)", contact_text).group(1)
+        secondary_phone_details = re.search("P: (.*)", contact_text).group(1)
+        return Contact(home_phone_value=home_phone_details,
+                       work_phone_value=work_phone_details, mobile_phone_value=mobile_phone_details,
+                       secondary_home_value=secondary_phone_details)
