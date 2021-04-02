@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Wronп_contact_list_comparison">
-      <change afterPath="$PROJECT_DIR$/Tests/test_phones.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен тест для сравнения телефонов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added Birthday and Anniversary Day">
-      <created>1613461003202</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1613461003202</updated>
     </task>
     <task id="LOCAL-00011" summary="Вынесен WD">
       <created>1613461063565</created>
@@ -517,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617389548398</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Добавлен тест для сравнения телефонов">
+      <created>1617391746261</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1617391746261</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -573,7 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Интеллектуальный logout" />
     <MESSAGE value="Task 8" />
     <MESSAGE value="Добавлены проверки наличия группы перед удалением" />
     <MESSAGE value="Добавлены проверки наличия группы перед редактированием" />
@@ -598,7 +596,8 @@
     <MESSAGE value="Задание №13_Правки" />
     <MESSAGE value="Задание №13_Правки_2" />
     <MESSAGE value="Wronп_contact_list_comparison" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wronп_contact_list_comparison" />
+    <MESSAGE value="Добавлен тест для сравнения телефонов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен тест для сравнения телефонов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
