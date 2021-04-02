@@ -19,12 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №13_Правки_2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/contact_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/contact_class.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Wronп_contact_list_comparison">
       <change beforePath="$PROJECT_DIR$/Tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_edit_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Usage of Class - Temp">
-      <created>1613057323663</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1613057323663</updated>
     </task>
     <task id="LOCAL-00009" summary="Added Birthday and Anniversary Day">
       <created>1613076993646</created>
@@ -519,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617378305736</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Wronп_contact_list_comparison">
+      <created>1617387981709</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1617387981709</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -575,7 +571,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Корректная работа всего прогона" />
     <MESSAGE value="Интеллектуальный logout" />
     <MESSAGE value="Task 8" />
     <MESSAGE value="Добавлены проверки наличия группы перед удалением" />
@@ -600,7 +595,8 @@
     <MESSAGE value="Задание №13" />
     <MESSAGE value="Задание №13_Правки" />
     <MESSAGE value="Задание №13_Правки_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №13_Правки_2" />
+    <MESSAGE value="Wronп_contact_list_comparison" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wronп_contact_list_comparison" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,11 +605,6 @@
           <url>file://$PROJECT_DIR$/Tests/test_add_contact.py</url>
           <line>20</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Tests/test_edit_contact.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
