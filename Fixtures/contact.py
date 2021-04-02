@@ -199,8 +199,6 @@ class ContactHelper:
     def edit_contact_by_index(self, index, contact):
         wd = self.app.wd
         self.return_to_homepage()
-        # select some contact
-        self.select_contact_by_index(index)
         # click edit
         wd.find_element_by_xpath("(//table/tbody/tr[" + str(index+2) + "]//img[@alt='Edit'])").click()
         # edit fields
@@ -227,11 +225,17 @@ class ContactHelper:
         self.return_to_homepage()
         self.contact_cache = None
 
-
     def count_contacts(self):
         wd = self.app.wd
         self.return_to_homepage()
         return len(wd.find_elements_by_name("selected[]"))
+
+    def change_field_value(self, field_name, text):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(text)
 
     contact_cache = None
 
@@ -240,8 +244,18 @@ class ContactHelper:
             wd = self.app.wd
             self.return_to_homepage()
             self.contact_cache = []
-            for element in wd.find_elements_by_css_selector("tr[name='entry']"):
-                text = element.text
-                local_contact_id = element.find_element_by_name("selected[]").get_attribute("value")
-                self.contact_cache.append(Contact(first_name_value=text, contact_id_value=local_contact_id))
+            for contacts_rows in wd.find_elements_by_name("entry"):
+                contacts_cells = contacts_rows.find_elements_by_tag_name("td")
+                local_contact_firstname = contacts_cells[2].text
+                local_contact_lastname = contacts_cells[1].text
+                local_contact_id = contacts_cells[0].find_element_by_tag_name("input").get_attribute("value")
+                self.contact_cache.append(
+                    Contact(first_name_value=local_contact_firstname, last_name_value=local_contact_lastname,
+                            contact_id_value=local_contact_id))
         return list(self.contact_cache)
+
+    def view_contact_by_index(self, index):
+        wd = self.app.wd
+        self.return_to_homepage()
+        # click view
+        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index+2) + "]//img[@alt='Details'])").click()
