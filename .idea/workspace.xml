@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №13">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №13_Правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_delete_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_delete_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Tests">
+  <component name="RunManager" selected="Python tests.pytest in test_delete_contact.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_delete_contact.py" />
+        <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
@@ -174,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Class Group">
-      <created>1612979543495</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1612979543495</updated>
     </task>
     <task id="LOCAL-00007" summary="Added Contact class, new test for creation contact, сorrected codestyle at groups">
       <created>1613052408822</created>
@@ -518,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616003204400</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Задание №13_Правки">
+      <created>1617221574291</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1617221574291</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -574,7 +573,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Вынесены login и logout" />
     <MESSAGE value="Багфикс для контактов" />
     <MESSAGE value="Корректная работа всего прогона" />
     <MESSAGE value="Интеллектуальный logout" />
@@ -599,6 +597,7 @@
     <MESSAGE value="Обновлено создание и редактирование" />
     <MESSAGE value="Добавлено хэширование и кеширование" />
     <MESSAGE value="Задание №13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №13" />
+    <MESSAGE value="Задание №13_Правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №13_Правки" />
   </component>
 </project>

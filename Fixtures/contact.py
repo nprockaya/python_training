@@ -223,7 +223,6 @@ class ContactHelper:
         # accept
         wd.switch_to_alert().accept()
         # waiting for confirmation
-        sleep(1)
         wd.find_element_by_xpath("//div[@class='msgbox']")
         self.return_to_homepage()
         self.contact_cache = None
