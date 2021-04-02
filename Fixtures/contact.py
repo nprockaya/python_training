@@ -2,6 +2,7 @@ from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
 from time import sleep
 
+
 class ContactHelper:
 
     def __init__(self, appcontact):
@@ -191,7 +192,7 @@ class ContactHelper:
 
     def select_contact_by_index(self, index):
         wd = self.app.wd
-        wd.find_element_by_xpath("//table/tbody/tr[" + str(index+2) + "]/td[1]/input").click()
+        wd.find_element_by_xpath("//table/tbody/tr[" + str(index + 2) + "]/td[1]/input").click()
 
     def edit_first_contact(self):
         self.edit_contact_by_index(0)
@@ -200,7 +201,7 @@ class ContactHelper:
         wd = self.app.wd
         self.return_to_homepage()
         # click edit
-        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index+2) + "]//img[@alt='Edit'])").click()
+        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index + 2) + "]//img[@alt='Edit'])").click()
         # edit fields
         self.fill_contact_form(contact)
         # submit edit
@@ -249,13 +250,33 @@ class ContactHelper:
                 local_contact_firstname = contacts_cells[2].text
                 local_contact_lastname = contacts_cells[1].text
                 local_contact_id = contacts_cells[0].find_element_by_tag_name("input").get_attribute("value")
+                all_phones = contacts_cells[5].text.splitlines()
                 self.contact_cache.append(
                     Contact(first_name_value=local_contact_firstname, last_name_value=local_contact_lastname,
-                            contact_id_value=local_contact_id))
+                            contact_id_value=local_contact_id, home_phone_value=all_phones[0],
+                            mobile_phone_value=all_phones[1], work_phone_value=all_phones[2],
+                            secondary_home_value=all_phones[3]))
         return list(self.contact_cache)
 
     def view_contact_by_index(self, index):
         wd = self.app.wd
         self.return_to_homepage()
         # click view
-        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index+2) + "]//img[@alt='Details'])").click()
+        wd.find_element_by_xpath("(//table/tbody/tr[" + str(index + 2) + "]//img[@alt='Edit'])").click()
+
+    def get_contact_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.view_contact_by_index(index)
+        # person data
+        first_name_ep = wd.find_element_by_name("firstname").get_attribute("value")
+        last_name_ep = wd.find_element_by_name("lastname").get_attribute("value")
+        contact_id_ep = wd.find_element_by_name("id").get_attribute("value")
+        # phones
+        home_phone_ep = wd.find_element_by_name("home").get_attribute("value")
+        mobile_phone_ep = wd.find_element_by_name("mobile").get_attribute("value")
+        work_phone_ep = wd.find_element_by_name("work").get_attribute("value")
+        secondary_home_ep = wd.find_element_by_name("phone2").get_attribute("value")
+        return Contact(first_name_value=first_name_ep, last_name_value=last_name_ep,
+                       contact_id_value=contact_id_ep, home_phone_value=home_phone_ep,
+                       work_phone_value=work_phone_ep, mobile_phone_value=mobile_phone_ep,
+                       secondary_home_value=secondary_home_ep)
