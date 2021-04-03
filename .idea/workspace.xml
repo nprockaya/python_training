@@ -19,16 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен merge_phones_like_on_home_page">
-      <change afterPath="$PROJECT_DIR$/Tests/test_validation_contact_info.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Расширены проверки для контакта на home/edit pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/contact_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/contact_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_edit_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_validation_phones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_validation_contact_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_validation_contact_info.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Правки_2">
-      <created>1613583385681</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1613583385681</updated>
     </task>
     <task id="LOCAL-00015" summary="Группировка">
       <created>1613585087529</created>
@@ -523,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617394711034</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Расширены проверки для контакта на home/edit pages">
+      <created>1617481799335</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1617481799335</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -579,7 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлены проверки наличия контакта перед удалением" />
     <MESSAGE value="Добавлены проверки наличия контакта перед удалением и редактированием" />
     <MESSAGE value="Оптимизирована навигация в группах" />
     <MESSAGE value="Промежуточный результат" />
@@ -604,6 +596,7 @@
     <MESSAGE value="Добавлен clear" />
     <MESSAGE value="Добавлен test_phones_on_contact_view_page" />
     <MESSAGE value="Добавлен merge_phones_like_on_home_page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен merge_phones_like_on_home_page" />
+    <MESSAGE value="Расширены проверки для контакта на home/edit pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Расширены проверки для контакта на home/edit pages" />
   </component>
 </project>
