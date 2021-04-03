@@ -10,18 +10,18 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-test_data = [Group(_name="", _header="", _footer="")] + \
+test_data_for_group = [Group(_name="", _header="", _footer="")] + \
             [Group(_name=random_string("group_name", 10),
                    _header=random_string("group_name", 20),
                    _footer=random_string("group_name", 20)) for i in range(1)]
 
-# test_data = [Group(_name=name, _header=header, _footer=footer)
+# test_data_for_group = [Group(_name=name, _header=header, _footer=footer)
 #              for name in ["", random_string("group_name", 10)]
 #              for header in ["", random_string("group_name", 20)]
 #              for footer in ["", random_string("group_name", 20)]]
 
 
-@pytest.mark.parametrize("group", test_data, ids=[repr(x) for x in test_data])
+@pytest.mark.parametrize("group", test_data_for_group, ids=[repr(x) for x in test_data_for_group])
 def test_add_normal_group(app, group):
     old_groups = app.group.get_group_list()
     app.group.create(group)

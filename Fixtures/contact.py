@@ -258,7 +258,7 @@ class ContactHelper:
                     Contact(first_name_value=local_contact_firstname, last_name_value=local_contact_lastname,
                             address_value=local_contact_address, all_emails_from_home_page_value=all_emails,
                             contact_id_value=local_contact_id, all_phones_from_home_page_value=all_phones))
-            return list(self.contact_cache)
+        return list(self.contact_cache)
 
     def view_contact_by_index_edit_page(self, index):
         wd = self.app.wd
