@@ -1,5 +1,6 @@
 from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
+from random import randrange
 import re
 
 
@@ -249,12 +250,15 @@ class ContactHelper:
                 contacts_cells = contacts_rows.find_elements_by_tag_name("td")
                 local_contact_firstname = contacts_cells[2].text
                 local_contact_lastname = contacts_cells[1].text
-                local_contact_id = contacts_cells[0].find_element_by_tag_name("input").get_attribute("value")
+                local_contact_address = contacts_cells[3].text
+                all_emails = contacts_cells[4].text
                 all_phones = contacts_cells[5].text
+                local_contact_id = contacts_cells[0].find_element_by_tag_name("input").get_attribute("value")
                 self.contact_cache.append(
                     Contact(first_name_value=local_contact_firstname, last_name_value=local_contact_lastname,
+                            address_value=local_contact_address, all_emails_from_home_page_value=all_emails,
                             contact_id_value=local_contact_id, all_phones_from_home_page_value=all_phones))
-                return list(self.contact_cache)
+            return list(self.contact_cache)
 
     def view_contact_by_index_edit_page(self, index):
         wd = self.app.wd
@@ -275,15 +279,21 @@ class ContactHelper:
         first_name_ep = wd.find_element_by_name("firstname").get_attribute("value")
         last_name_ep = wd.find_element_by_name("lastname").get_attribute("value")
         contact_id_ep = wd.find_element_by_name("id").get_attribute("value")
+        address_ep = wd.find_element_by_name("address").get_attribute("value")
+        # emails
+        email_ep = wd.find_element_by_name("email").get_attribute("value")
+        email2_ep = wd.find_element_by_name("email2").get_attribute("value")
+        email3_ep = wd.find_element_by_name("email3").get_attribute("value")
         # phones
         home_phone_ep = wd.find_element_by_name("home").get_attribute("value")
         mobile_phone_ep = wd.find_element_by_name("mobile").get_attribute("value")
         work_phone_ep = wd.find_element_by_name("work").get_attribute("value")
         secondary_home_ep = wd.find_element_by_name("phone2").get_attribute("value")
         return Contact(first_name_value=first_name_ep, last_name_value=last_name_ep,
-                       contact_id_value=contact_id_ep, home_phone_value=home_phone_ep,
-                       work_phone_value=work_phone_ep, mobile_phone_value=mobile_phone_ep,
-                       secondary_home_value=secondary_home_ep)
+                       contact_id_value=contact_id_ep, address_value=address_ep,
+                       email_value=email_ep, email2_value=email2_ep, email3_value=email3_ep,
+                       home_phone_value=home_phone_ep, work_phone_value=work_phone_ep,
+                       mobile_phone_value=mobile_phone_ep, secondary_home_value=secondary_home_ep)
 
     def get_contact_info_from_view_page(self, index):
         wd = self.app.wd
@@ -296,4 +306,5 @@ class ContactHelper:
         return Contact(home_phone_value=home_phone_details,
                        work_phone_value=work_phone_details, mobile_phone_value=mobile_phone_details,
                        secondary_home_value=secondary_phone_details)
+
 

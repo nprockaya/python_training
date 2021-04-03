@@ -33,9 +33,9 @@ def test_edit_contact(app):
         app.contact.create(contact)
     old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
-    contact.contact_id = old_contacts[index].contact_id
+    edited_contact.contact_id = old_contacts[index].contact_id
     app.contact.edit_contact_by_index(index, edited_contact)
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
     old_contacts[index] = edited_contact
-   # assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
