@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №14">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fixtures/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fixtures/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_validation_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_validation_phones.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Tests">
+  <component name="RunManager" selected="Python tests.pytest in test_validation_phones.py">
     <configuration name="pytest in Tests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,22 +119,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_edit_contact.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test_validation_contact_info.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,13 +135,29 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_validation_phones.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_validation_phones.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_validation_phones.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
         <item itemvalue="Python tests.pytest in test_validation_contact_info.py" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Создана фикстура для сессий">
-      <created>1613586338506</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1613586338506</updated>
     </task>
     <task id="LOCAL-00017" summary="Правки для контактов">
       <created>1613586598195</created>
@@ -518,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617484105410</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Задание №15">
+      <created>1617489973428</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1617489973428</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -574,7 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Оптимизирована навигация в группах" />
     <MESSAGE value="Промежуточный результат" />
     <MESSAGE value="Задание №9" />
     <MESSAGE value="Корректный вызов current_url" />
@@ -599,7 +596,8 @@
     <MESSAGE value="Добавлен merge_phones_like_on_home_page" />
     <MESSAGE value="Расширены проверки для контакта на home/edit pages" />
     <MESSAGE value="Задание №14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №14" />
+    <MESSAGE value="Задание №15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Задание №15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
