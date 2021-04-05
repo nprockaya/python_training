@@ -3,12 +3,15 @@ from Fixtures.session import SessionHelper
 from Fixtures.group import GroupHelper
 from Fixtures.contact import ContactHelper
 
+
 class Application:
     def __init__(self, browser="firefox", base_url="http://localhost/addressbook/"):
         if browser == "firefox":
             self.wd = webdriver.Firefox()
         elif browser == "chrome":
             self.wd = webdriver.Chrome()
+        elif browser == "edge":
+            self.wd = webdriver.Edge()
         elif browser == "opera":
             self.wd = webdriver.Opera()
         else:
@@ -17,13 +20,9 @@ class Application:
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)
-        self.base_url=base_url
+        self.base_url = base_url
 
-    def open_homepage_group(self):
-        wd = self.wd
-        wd.get(self.base_url)
-
-    def open_homepage_contact(self):
+    def open_homepage(self):
         wd = self.wd
         wd.get(self.base_url)
 
@@ -36,4 +35,3 @@ class Application:
             return True
         except:
             return False
-

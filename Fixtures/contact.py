@@ -1,6 +1,5 @@
 from selenium.webdriver.support.ui import Select
 from Models.contact_class import Contact
-from random import randrange
 import re
 
 
