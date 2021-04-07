@@ -10,8 +10,8 @@ def test_phones_on_homepage(app):
     assert clear(contact_from_home_page.first_name) == clear(contact_from_edit_page.first_name)
     assert clear(contact_from_home_page.last_name) == clear(contact_from_edit_page.last_name)
     assert clear(contact_from_home_page.address) == clear(contact_from_edit_page.address)
-    assert contact_from_home_page.all_emails_from_home_page == merge_emails_like_on_home_page(contact_from_edit_page)
-    assert contact_from_home_page.all_phones_from_home_page == merge_phones_like_on_home_page(contact_from_edit_page)
+    assert clear(contact_from_home_page.all_emails_from_home_page) == clear(merge_emails_like_on_home_page(contact_from_edit_page))
+    assert clear(contact_from_home_page.all_phones_from_home_page) == clear(merge_phones_like_on_home_page(contact_from_edit_page))
 
 
 def clear(contact_string):
