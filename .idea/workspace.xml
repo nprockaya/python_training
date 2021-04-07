@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Вынесена Data">
-      <change afterPath="$PROJECT_DIR$/Generator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/group.py" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен Generator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/groups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <recent name="C:\Users\Nadya\PycharmProjects\python_training\Models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.group">
+  <component name="RunManager" selected="Python tests.pytest in test_add_group.py">
     <configuration name="group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,8 +167,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python.group" />
         <item itemvalue="Python tests.pytest in test_delete_group.py" />
         <item itemvalue="Python tests.pytest in Tests" />
         <item itemvalue="Python tests.pytest for test_validation_phones.test_phones_on_contact_view_page" />
@@ -185,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00023" summary="1 Class application.py">
-      <created>1613755681660</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1613755681660</updated>
     </task>
     <task id="LOCAL-00024" summary="Sleep for logout">
       <created>1613756042986</created>
@@ -529,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617797136654</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Добавлен Generator">
+      <created>1617799419314</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1617799419314</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -585,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Промежуточное выполнение, апдейт теста удаления группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста добавления группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста редактирования группы" />
     <MESSAGE value="Добавлено хеширование и кеширование" />
@@ -610,6 +610,7 @@
     <MESSAGE value="Добавлен конфиг-файл" />
     <MESSAGE value="Задание №17" />
     <MESSAGE value="Вынесена Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вынесена Data" />
+    <MESSAGE value="Добавлен Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Generator" />
   </component>
 </project>
