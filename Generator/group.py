@@ -1,4 +1,4 @@
-import json
+import jsonpickle
 import os
 import random
 import string
@@ -40,4 +40,6 @@ test_data_for_group = [Group(_name="", _header="", _footer="")] + \
 group_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
 
 with open(group_file, "w") as file:
-    file.write(json.dumps(test_data_for_group, default=lambda x: x.__dict__, indent=2))
+    # file.write(json.dumps(test_data_for_group, default=lambda x: x.__dict__, indent=2))
+    jsonpickle.set_encoder_options("json", indent=2)
+    file.write(jsonpickle.encode(test_data_for_group))

@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен Generator">
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлена метафункция">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/groups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test_add_group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
@@ -86,7 +86,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generator/group.py" />
-      <option name="PARAMETERS" value="-n 10 -f data/test.json" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -186,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Sleep for logout">
-      <created>1613756042986</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1613756042986</updated>
     </task>
     <task id="LOCAL-00025" summary="Added edition contact/group">
       <created>1613766553946</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617799419314</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Добавлена метафункция">
+      <created>1617801034724</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1617801034724</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -586,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Промежуточное выполнение, апдейт теста добавления группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста редактирования группы" />
     <MESSAGE value="Добавлено хеширование и кеширование" />
     <MESSAGE value="Добавлен рандом" />
@@ -611,6 +610,7 @@
     <MESSAGE value="Задание №17" />
     <MESSAGE value="Вынесена Data" />
     <MESSAGE value="Добавлен Generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен Generator" />
+    <MESSAGE value="Добавлена метафункция" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена метафункция" />
   </component>
 </project>
