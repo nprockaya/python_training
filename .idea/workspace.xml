@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен json">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-    </list>
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен конфиг-файл" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Вынесены классы-помощники">
-      <created>1613592290267</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1613592290267</updated>
     </task>
     <task id="LOCAL-00021" summary="Фикс проблем">
       <created>1613592304129</created>
@@ -523,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617794261362</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Добавлен конфиг-файл">
+      <created>1617796258900</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1617796258900</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -579,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Корректный вызов current_url" />
     <MESSAGE value="Промежуточное выполнение, добавление списка в группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт тестов" />
     <MESSAGE value="Промежуточное выполнение, апдейт теста удаления группы" />
@@ -604,7 +600,8 @@
     <MESSAGE value="Задание №15" />
     <MESSAGE value="Задание №16" />
     <MESSAGE value="Добавлен json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен json" />
+    <MESSAGE value="Добавлен конфиг-файл" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен конфиг-файл" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
