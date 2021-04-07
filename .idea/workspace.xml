@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Задание №16">
-      <change afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
+    <list default="true" id="6f2d036a-3186-4752-8213-c71f5796f56f" name="Default Changelist" comment="Добавлен json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
@@ -125,7 +124,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -180,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612962037985</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Вынесены классы-помощники">
-      <created>1613591709575</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1613591709575</updated>
     </task>
     <task id="LOCAL-00020" summary="Вынесены классы-помощники">
       <created>1613592290267</created>
@@ -524,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617622532204</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Добавлен json">
+      <created>1617794261361</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1617794261362</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -580,7 +579,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задание №9" />
     <MESSAGE value="Корректный вызов current_url" />
     <MESSAGE value="Промежуточное выполнение, добавление списка в группы" />
     <MESSAGE value="Промежуточное выполнение, апдейт тестов" />
@@ -605,7 +603,8 @@
     <MESSAGE value="Задание №14" />
     <MESSAGE value="Задание №15" />
     <MESSAGE value="Задание №16" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задание №16" />
+    <MESSAGE value="Добавлен json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
