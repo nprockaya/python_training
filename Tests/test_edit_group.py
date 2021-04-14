@@ -1,16 +1,23 @@
 from Models.group_class import Group
-from random import randrange
+import random
 
 
-def test_edit_group_name(app):
+def test_edit_group_name(app, db, check_ui):
     if app.group.count_groups() == 0:
         app.group.create(Group(_name="for_edit_test", _header="", _footer=""))
-    old_groups = app.group.get_group_list()
-    index = randrange(len(old_groups))
-    group = Group(_name="name_group_edit_test")
-    group.group_id = old_groups[index].group_id
-    app.group.edit_group_by_index(index, group)
-    new_groups = app.group.get_group_list()
+    # получаем список групп с БД
+    old_groups = db.get_group_list()
+    # выбираем из списка случайную группу
+    group = random.choice(old_groups)
+    # задаем новые данные для группы
+    new_group_data = Group(_name="name_group_edit_test",
+                           _header="header_group_edit_test",
+                           _footer="footer_group_edit_test")
+    # модифицируем группу
+    app.group.edit_group_by_id(group.group_id, new_group_data)
+    # получаем новый список групп
+    new_groups = db.get_group_list()
+    # сравниваем длины старого и нового списков
     assert len(old_groups) == len(new_groups)
-    old_groups[index] = group
-    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
+    if check_ui:
+        assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
