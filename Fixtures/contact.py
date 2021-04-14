@@ -194,8 +194,24 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_xpath("//table/tbody/tr[" + str(index + 2) + "]/td[1]/input").click()
 
+    def select_contact_by_id(self, contact_id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='" + contact_id + "']").click()
+
     def edit_first_contact(self):
         self.edit_contact_by_index(0)
+
+    def edit_contact_by_id(self, contact_id, new_contact_data):
+        wd = self.app.wd
+        self.return_to_homepage()
+        # click edit
+        wd.find_element_by_xpath("//a[@href='edit.php?id=" + contact_id + "']").click()
+        # edit fields
+        self.fill_contact_form(new_contact_data)
+        # submit edit
+        wd.find_element_by_xpath("(//input[@name='update'])").click()
+        self.return_to_homepage()
+        self.contact_cache = None
 
     def edit_contact_by_index(self, index, contact):
         wd = self.app.wd
@@ -211,6 +227,20 @@ class ContactHelper:
 
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
+
+    def delete_contact_by_id(self, contact_id):
+        wd = self.app.wd
+        self.return_to_homepage()
+        # select first contact
+        self.select_contact_by_id(contact_id)
+        # click delete
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # accept
+        wd.switch_to_alert().accept()
+        # waiting for confirmation
+        wd.find_element_by_xpath("//div[@class='msgbox']")
+        self.return_to_homepage()
+        self.contact_cache = None
 
     def delete_contact_by_index(self, index):
         wd = self.app.wd
