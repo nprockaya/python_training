@@ -1,3 +1,4 @@
+import re
 from sys import maxsize
 
 
@@ -42,8 +43,12 @@ class Contact:
         return "%s:%s %s" % (self.contact_id, self.first_name, self.last_name)
 
     def __eq__(self, other):
+        def clear(contact_string):
+            contact_string_without_spaces = re.sub(r"\s+", "", contact_string)
+            return re.sub("[()-]", "", contact_string_without_spaces)
+
         return (self.contact_id is None or other.contact_id is None or self.contact_id == other.contact_id) \
-               and self.first_name == other.first_name and self.last_name == other.last_name
+               and clear(self.first_name) == clear(other.first_name) and clear(self.last_name) == clear(other.last_name)
 
     def id_or_max(self):
         if self.contact_id:

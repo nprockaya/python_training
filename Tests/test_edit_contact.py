@@ -39,6 +39,12 @@ def test_edit_contact(app, db, check_ui):
     app.contact.edit_contact_by_id(contact.contact_id, new_contact_data)
     # получаем новый список контактов
     new_contacts = db.get_contact_list()
+    # ищем отредактированный контакт по id
+    new_contact = next(x for x in new_contacts if x.contact_id == contact.contact_id)
+    # в старом списке удаляем старый контакт
+    old_contacts.remove(contact)
+    # на его место добавляем новый отредактированный
+    old_contacts.append(new_contact)
     # сравниваем длины старого и нового списков
     assert len(old_contacts) == len(new_contacts)
     if check_ui:
