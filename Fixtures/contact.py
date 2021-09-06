@@ -1,6 +1,7 @@
-from selenium.webdriver.support.ui import Select
-from Models.contact_class import Contact
 import re
+from selenium.webdriver.support.ui import Select
+
+from Models.contact_class import Contact
 
 
 class ContactHelper:
@@ -328,12 +329,14 @@ class ContactHelper:
         wd = self.app.wd
         self.view_contact_by_index_details(index)
         contact_text = wd.find_element_by_id("content").text
-        home_phone_details = re.search("H: (.*)", contact_text).group(1)
-        mobile_phone_details = re.search("M: (.*)", contact_text).group(1)
-        work_phone_details = re.search("W: (.*)", contact_text).group(1)
-        secondary_phone_details = re.search("P: (.*)", contact_text).group(1)
+        home_phone_details_re = re.search("H: (.*)", contact_text)
+        home_phone_details = home_phone_details_re.group(1) if home_phone_details_re is not None else ""
+        mobile_phone_details_re = re.search("M: (.*)", contact_text)
+        mobile_phone_details = mobile_phone_details_re.group(1) if mobile_phone_details_re is not None else ""
+        work_phone_details_re = re.search("W: (.*)", contact_text)
+        work_phone_details = work_phone_details_re.group(1) if work_phone_details_re is not None else ""
+        secondary_phone_details_re = re.search("P: (.*)", contact_text)
+        secondary_phone_details = secondary_phone_details_re.group(1) if secondary_phone_details_re is not None else ""
         return Contact(home_phone_value=home_phone_details,
                        work_phone_value=work_phone_details, mobile_phone_value=mobile_phone_details,
                        secondary_home_value=secondary_phone_details)
-
-
