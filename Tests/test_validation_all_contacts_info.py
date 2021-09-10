@@ -1,7 +1,8 @@
-from Tests.test_validation_contact_info import clear, merge_emails_like_on_home_page, merge_phones_like_on_home_page
+from Tests.test_validation_contact_info import merge_emails_like_on_home_page, merge_phones_like_on_home_page
+from Utils.string_utils import clear_spaces as clear
 
 
-def test_all_phones_on_homepage(app, db):
+def test_validation_all_contacts_info(app, db):
     ui_contacts_list = app.contact.get_contact_list()
     db_contacts_list = db.get_contact_list()
     assert len(ui_contacts_list) == len(db_contacts_list)

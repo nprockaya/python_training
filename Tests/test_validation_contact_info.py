@@ -1,5 +1,6 @@
-import re
 from random import randrange
+
+from Utils.string_utils import clear_spaces_and_hyphens as clear
 
 
 def test_phones_on_homepage(app):
@@ -12,11 +13,6 @@ def test_phones_on_homepage(app):
     assert clear(contact_from_home_page.address) == clear(contact_from_edit_page.address)
     assert clear(contact_from_home_page.all_emails_from_home_page) == clear(merge_emails_like_on_home_page(contact_from_edit_page))
     assert clear(contact_from_home_page.all_phones_from_home_page) == clear(merge_phones_like_on_home_page(contact_from_edit_page))
-
-
-def clear(contact_string):
-    contact_string_without_spaces = re.sub(r"\s+", "", contact_string)
-    return re.sub("[()-]", "", contact_string_without_spaces)
 
 
 def merge_emails_like_on_home_page(contact):

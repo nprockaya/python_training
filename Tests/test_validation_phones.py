@@ -1,4 +1,4 @@
-import re
+from Utils.string_utils import clear_hyphens as clear
 
 
 def test_phones_on_homepage(app):
@@ -14,10 +14,6 @@ def test_phones_on_contact_view_page(app):
     assert contact_from_view_page.work_phone == contact_from_edit_page.work_phone
     assert contact_from_view_page.mobile_phone == contact_from_edit_page.mobile_phone
     assert contact_from_view_page.secondary_home == contact_from_edit_page.secondary_home
-
-
-def clear(phone_string):
-    return re.sub("[()-]", "", phone_string)
 
 
 def merge_phones_like_on_home_page(contact):
