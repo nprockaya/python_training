@@ -1,4 +1,3 @@
-from Tests.test_validation_contact_info import merge_emails_like_on_home_page, merge_phones_like_on_home_page
 from Utils.string_utils import clear_spaces as clear
 
 
@@ -12,5 +11,5 @@ def test_validation_all_contacts_info(app, db):
         assert clear(ui_contact.first_name) == clear(db_contact.first_name)
         assert clear(ui_contact.last_name) == clear(db_contact.last_name)
         assert clear(ui_contact.address) == clear(db_contact.address)
-        assert clear(ui_contact.all_emails_from_home_page) == clear(merge_emails_like_on_home_page(db_contact))
-        assert clear(ui_contact.all_phones_from_home_page) == clear(merge_phones_like_on_home_page(db_contact))
+        assert clear(ui_contact.all_emails_from_home_page) == clear(db_contact.merge_emails_like_on_home_page(False))
+        assert clear(ui_contact.all_phones_from_home_page) == clear(db_contact.merge_phones_like_on_home_page())

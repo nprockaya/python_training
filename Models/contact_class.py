@@ -1,5 +1,6 @@
-import re
 from sys import maxsize
+
+from Utils.string_utils import clear_spaces, clear_spaces_and_hyphens as clear_all
 
 
 class Contact:
@@ -43,15 +44,26 @@ class Contact:
         return "%s:%s %s" % (self.contact_id, self.first_name, self.last_name)
 
     def __eq__(self, other):
-        def clear(contact_string):
-            contact_string_without_spaces = re.sub(r"\s+", "", contact_string)
-            return re.sub("[()-]", "", contact_string_without_spaces)
-
         return (self.contact_id is None or other.contact_id is None or self.contact_id == other.contact_id) \
-               and clear(self.first_name) == clear(other.first_name) and clear(self.last_name) == clear(other.last_name)
+               and clear_all(self.first_name) == clear_all(other.first_name) and clear_all(self.last_name) == clear_all(
+            other.last_name)
 
     def id_or_max(self):
         if self.contact_id:
             return int(self.contact_id)
         else:
             return maxsize
+
+    def merge_emails_like_on_home_page(self, clear_hyphens):
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: clear_all(x) if clear_hyphens else clear_spaces(x),
+                                    filter(lambda x: x is not None,
+                                           [self.email, self.email2,
+                                            self.email3]))))
+
+    def merge_phones_like_on_home_page(self):
+        return "\n".join(filter(lambda x: x != "",
+                                map(lambda x: clear_all(x),
+                                    filter(lambda x: x is not None,
+                                           [self.home_phone, self.mobile_phone,
+                                            self.work_phone, self.secondary_home]))))
