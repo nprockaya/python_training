@@ -1,4 +1,5 @@
 import re
+
 from selenium.webdriver.support.ui import Select
 
 from Models.contact_class import Contact
@@ -340,3 +341,23 @@ class ContactHelper:
         return Contact(home_phone_value=home_phone_details,
                        work_phone_value=work_phone_details, mobile_phone_value=mobile_phone_details,
                        secondary_home_value=secondary_phone_details)
+
+    def add_contact_to_group(self, contact, group):
+        wd = self.app.wd
+        self.return_to_homepage()
+        self.select_contact_by_id(contact.contact_id)
+        self.select_group_for_add_сontact_by_id(group.group_id)
+        wd.find_element_by_name("add").click()
+
+    def select_group_for_add_сontact_by_id(self, group_id):
+        wd = self.app.wd
+        wd.find_element_by_name("to_group").click()
+        Select(wd.find_element_by_name("to_group")).select_by_value(group_id)
+
+    def delete_contact_from_group(self, contact_in_group):
+        wd = self.app.wd
+        self.return_to_homepage()
+        wd.find_element_by_name("group").click()
+        Select(wd.find_element_by_name("group")).select_by_value(contact_in_group.group_id)
+        self.select_contact_by_id(contact_in_group.contact_id)
+        wd.find_element_by_name("remove").click()
